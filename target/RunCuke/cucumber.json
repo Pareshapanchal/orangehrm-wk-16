@@ -1,0 +1,215 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 50673500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "I am on homepage",
+            "match": {
+              "location": "LoginSteps.iAmOnHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 237276401,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I Enter username",
+            "match": {
+              "location": "LoginSteps.iEnterUsername()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 96395000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Enter password",
+            "match": {
+              "location": "LoginSteps.iEnterPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 840819200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on Login Button",
+            "match": {
+              "location": "LoginSteps.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1347408601,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click On \"Admin\" Tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 12
+                }
+              ],
+              "location": "UserSteps.iClickOnTab(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1043840500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I verify \"System Users\" Text",
+            "match": {
+              "arguments": [
+                {
+                  "val": "System Users",
+                  "offset": 10
+                }
+              ],
+              "location": "UserSteps.iVerifyText(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4207613800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.steUp()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "search The Deleted User And Verify The Message NoRecordFound",
+        "description": "",
+        "id": "users-tests;search-the-deleted-user-and-verify-the-message-norecordfound",
+        "after": [
+          {
+            "result": {
+              "duration": 138300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 58894400,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I enter Username for Searching record \"Rosan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rosan",
+                  "offset": 39
+                }
+              ],
+              "location": "UserSteps.iEnterUsernameForSearchingRecord(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4201528400,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I Select User Role for Searching record \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 41
+                }
+              ],
+              "location": "UserSteps.iSelectUserRoleForSearchingRecord(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2072947900,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "I click on \"Search\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Search",
+                  "offset": 12
+                }
+              ],
+              "location": "UserSteps.iClickOn(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 781688400,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I verify message \"No Records Found\" on Admin page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "No Records Found",
+                  "offset": 18
+                }
+              ],
+              "location": "UserSteps.iVerifyMessageOnAdminPage(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 41,
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Users Tests",
+    "description": "",
+    "id": "users-tests",
+    "keyword": "Feature",
+    "uri": "user.feature"
+  }
+]
